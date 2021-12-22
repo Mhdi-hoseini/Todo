@@ -8,5 +8,54 @@
     <script src="/assets/js/app.js" defer></script>
     <title>Todo</title>
   </head>
-  <body></body>
+  <body class="bg-dark">
+    <header id="header" class="bg-dark p2">
+      <h1 class="title">March 9, 2020</h1>
+      <span class="label">Enjoy your day</span>
+      <hr />
+    </header>
+    <main id="main" class="planning p2">
+      <img
+        id="ill"
+        src="/assets/media/ill.svg"
+        alt="You will be happier by planning your day"
+      />
+      <div>
+        <blockquote>
+          "Without leaps of imagination or dreaming, we lose the excitement of
+          possibilities. Dreaming, after all is a form of planning."
+        </blockquote>
+        <button id="planning-btn" class="btn">Start planning your day</button>
+      </div>
+      <ul id="incomplete-list" class="hidden">
+        <h3>Incomplete</h3>
+      </ul>
+      <ul id="completed-list" class="hidden">
+        <h3>Completed</h3>
+      </ul>
+    </main>
+    <button id="add-btn" class="btn add-btn hidden"></button>
+    <template id="temp">
+      <form>
+        <input
+          class="title transparent"
+          type="text"
+          placeholder="Title :"
+          required
+        />
+        <input
+          class="label transparent"
+          type="text"
+          placeholder="Category :"
+          required
+        />
+        <hr />
+      </form>
+      <div>
+        <h3>Notes</h3>
+        <textarea class="transparent" placeholder="type"></textarea>
+      </div>
+      <button id="save-btn" type="submit">Save</button>
+    </template>
+  </body>
 </html>
