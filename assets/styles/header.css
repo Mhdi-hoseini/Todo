@@ -1,0 +1,7 @@
+header {
+  width: 100vw;
+  height: 16vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}

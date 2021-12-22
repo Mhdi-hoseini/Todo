@@ -1,0 +1,83 @@
+.title {
+  padding-block-start: 1rem;
+  font: var(--font-header);
+  color: var(--color-primary-alpha);
+}
+.label {
+  font: var(--font-label);
+  color: var(--color-dark-500);
+}
+.btn {
+  font: var(--font-label-large);
+  background-color: var(--color-primary-alpha);
+}
+.add-btn {
+  width: 56px;
+  height: 56px;
+  position: sticky;
+  display: inline;
+  float: right;
+  right: 5vw;
+  bottom: 5vh;
+  z-index: 1;
+  background: url(/assets/media/add-task.svg);
+}
+.checkbox {
+  display: inline;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 1.3rem;
+  height: 24px;
+  width: 24px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checkbox input {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0;
+}
+.checkmark {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 2px 6px;
+  display: inline-block;
+  border-radius: 6px;
+  border: 2px solid var(--color-dark-800);
+  background-color: var(--color-dark-600);
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+.checkbox .checkmark:after {
+  width: 5px;
+  height: 10px;
+  border: solid var(--color-primary-alpha);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.bg-dark {
+  background-color: var(--color-dark-700);
+}
+.transparent {
+  background-color: transparent;
+}
+.p2 {
+  padding: 0 2.2rem;
+}
+.hidden {
+  display: none;
+}

@@ -1,0 +1,91 @@
+template {
+  width: 0vw;
+  height: 100vh;
+  padding: 1em;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+template form {
+  width: 100%;
+  display: flex;
+  height: 16vh;
+  padding: 0 0.5em;
+  flex-direction: column;
+  gap: 1em;
+}
+template form hr {
+  opacity: 0.3;
+}
+template div {
+  width: 100%;
+  height: 88vh;
+}
+template div h3 {
+  margin: 1em 0.5em;
+}
+template div textarea {
+  width: 100%;
+  height: 50%;
+  padding: 1em;
+  font: var(--font-label-large);
+}
+template button {
+  height: 48px;
+  right: 5vw;
+  bottom: 5vh;
+  position: absolute;
+  font: var(--font-label-large);
+}
+.hide-body * {
+  display: none;
+}
+.hide-temp {
+  animation: hide-temp 500ms ease-out forwards;
+}
+/* media querry */
+@media screen and (max-width: 768px) {
+  template {
+    animation: open-fullscreen-temp 1ms ease-out forwards;
+    background-color: var(--color-dark-700);
+  }
+  template * {
+    opacity: 0;
+    animation: open-fullscreen-temp-body 300ms ease-out 100ms forwards;
+  }
+  template form input:first-of-type::placeholder {
+    color: var(--color-primary-alpha);
+  }
+  template form input:last-of-type::placeholder {
+    color: var(--color-dark-500);
+  }
+  template div h3 {
+    color: var(--color-light);
+  }
+  template div textarea,
+  template div textarea::placeholder {
+    color: var(--color-light-700);
+  }
+  template button {
+    color: var(--color-dark-700);
+    background-color: var(--color-primary-alpha);
+  }
+}
+@media screen and (min-width: 768px) {
+  template {
+    animation: open-sidebar-temp 250ms ease-out forwards;
+    background-color: var(--color-primary-alpha);
+  }
+  template input.title,
+  template input::placeholder,
+  textarea::placeholder {
+    color: var(--color-dark-700);
+  }
+  template button {
+    color: var(--color-primary-alpha);
+    background-color: var(--color-dark-800);
+  }
+  .close-temp {
+    animation: close-temp 250ms ease-out forwards;
+  }
+}

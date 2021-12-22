@@ -1,0 +1,59 @@
+@keyframes hide {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes show {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes to-left {
+  to {
+    padding-right: 41vw;
+  }
+}
+@keyframes to-right {
+  from {
+    padding-right: 41vw;
+  }
+  to {
+    padding-right: 8vw;
+  }
+}
+@keyframes hide-temp {
+  to {
+    width: 0;
+    margin: 0;
+    padding: 0;
+  }
+}
+@keyframes open-sidebar-temp {
+  to {
+    width: 33vw;
+  }
+}
+@keyframes close-temp {
+  to {
+    width: 0;
+  }
+}
+@keyframes open-fullscreen-temp {
+  from {
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+  }
+  to {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+}
+@keyframes open-fullscreen-temp-body {
+  to {
+    opacity: 1;
+  }
+}

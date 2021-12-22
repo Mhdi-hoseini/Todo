@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap");
+:root {
+  /* Colors */
+  --color-primary-alpha: #fff000;
+  --color-primary-beta: #00ff6f;
+  --color-secondary-alpha: #0011ff;
+  --color-secondary-beta: #ff0091;
+  --color-dark: #000000;
+  --color-dark-800: #0e0e11;
+  --color-dark-700: #141419;
+  --color-dark-600: #2b2d37;
+  --color-dark-500: #575767;
+  --color-light: #ffffff;
+  --color-light-700: #dadada;
+
+  /* Typography */
+  --font-header: normal 700 2em "Inter", sans-serif;
+  --font-header-samll: normal 700 1.125em "Inter", sans-serif;
+  --font-txt: normal 500 1.125em "Inter", sans-serif;
+  --font-txt-small: normal 500 0.875em "Inter", sans-serif;
+  --font-label: normal 600 0.875em "Inter", sans-serif;
+  --font-label-large: normal 600 1em "Inter", sans-serif;
+}

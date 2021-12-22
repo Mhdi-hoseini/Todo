@@ -1,0 +1,110 @@
+main {
+  width: 100vw;
+  height: 84vh;
+}
+main h3,
+main h4,
+main blockquote {
+  display: inline-block;
+}
+main h3 {
+  margin: 2em 1em;
+  font: var(--font-label-large);
+  color: var(--color-light);
+}
+main h4 {
+  font: var(--font-txt);
+  color: var(--color-light-700);
+}
+main blockquote {
+  width: 228px;
+  text-align: justify;
+  font: var(--font-txt-small);
+  line-height: 1.5;
+  color: var(--color-light-700);
+}
+main #planning-btn {
+  font: var(--font-label-large);
+}
+main #planning-btn:disabled {
+  color: var(--color-dark-700);
+}
+main li {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  justify-content: start;
+  align-items: center;
+}
+main li span {
+  padding: 0.5em 0;
+  grid-area: 2 / 2 / span 1 / span 1;
+}
+main .completed-item {
+  opacity: 0;
+}
+main .completed-item h4 {
+  color: var(--color-dark-500);
+}
+.home img,
+.home blockquote,
+.home #planning-btn {
+  display: none;
+}
+.hide {
+  animation: hide 300ms ease-out forwards;
+}
+.show {
+  animation: complated 500ms ease-out forwards;
+}
+
+/* media query */
+@media screen and (max-width: 768px) {
+  .planning {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+  }
+  .planning blockquote {
+    display: none;
+  }
+  .planning img {
+    width: 32vw;
+  }
+  .temp-add {
+    animation: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .planning {
+    gap: 8vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-right: 8vw;
+  }
+  .planning div {
+    display: flex;
+    flex-direction: column;
+  }
+  .planning img {
+    width: 16vw;
+  }
+  .home {
+    display: flex;
+    gap: 2em;
+  }
+  .home ul {
+    max-width: 50%;
+    overflow-wrap: anywhere;
+  }
+  .temp-add {
+    animation: to-left 500ms ease-out forwards;
+  }
+  .to-right {
+    animation: to-right 500ms ease-out forwards;
+  }
+}
